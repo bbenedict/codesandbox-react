@@ -7,6 +7,7 @@ const StyledApp = styled.div`
   color: blue;
   font-family: sans-serif;
   text-align: center;
+  border: 2px solid blue;
 `;
 
 export default function App() {
