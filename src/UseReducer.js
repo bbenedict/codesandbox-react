@@ -26,7 +26,7 @@ function localReducer(state, action) {
       return { count: action.payload };
 
     default:
-      return { count: state.count - 1 };
+      return state;
   }
 }
 
