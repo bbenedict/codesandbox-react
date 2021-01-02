@@ -1,4 +1,4 @@
-mport React, { useContext } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import UseReducer from "./UseReducer";
 import { MyContext } from "./UseContext";
