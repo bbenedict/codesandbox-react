@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 
-export default function DisplayTime(month, day, year, hour, minute) {
-  const dateString = useMemo(() => {
-    console.log("Updating memoized values...");
-    return `${month}/${day}/${year} ${hour}:${minute}`;
-  }, [month, day, year, hour, minute]);
+export default function PosOrNeg(count) {
+  const result = useMemo(() => {
+    console.log("Updating memoized value...");
+    if (count < 0) return "negative";
+    if (count > 0) return "positive";
+    return "at the equator";
+  }, [count]);
 
-  return dateString;
+  return result;
 }
